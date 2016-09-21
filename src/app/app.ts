@@ -4,8 +4,25 @@ import { Component } from '@angular/core';
   selector: 'app',
   template: `
   <p>Hello Angular Universal App</p>
-  <router-outlet></router-outlet>
-  `
+  <nav>
+    <a [routerLink]="['/']">
+      Home
+    </a>
+    |
+    <a [routerLink]="['/about']">
+      About
+    </a>
+    |
+    <a [routerLink]="['/github', 'angular']">
+      Github Repos
+    </a>
+  </nav>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <footer>
+    © 2016
+  </footer>  `
 })
 export class App {
 

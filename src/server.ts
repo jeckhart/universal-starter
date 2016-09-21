@@ -55,6 +55,7 @@ app.get('/about', ngApp);
 app.get('/about/*', ngApp);
 app.get('/home', ngApp);
 app.get('/home/*', ngApp);
+app.get('/github/*', ngApp);
 
 
 app.get('*', function(req, res) {
